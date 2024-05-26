@@ -11,7 +11,7 @@ const UserMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleOpen = useCallback(() => {
         setIsOpen(!isOpen);
-    }, []);
+    }, [isOpen]);
 
     return(
         <div className="relative">
